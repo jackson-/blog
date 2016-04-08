@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+        <script>
+            function do_shit(){
+                console.log("HERE");
+                $.ajax({
+                  method: "POST",
+                  url: "/articles/",
+                  data: { csrfmiddlewaretoken: '{{csrf_token}}' }
+                })
+                  .done(function( msg ) {
+                    alert( "Data Saved: " + msg.username + " " + msg.password );
+                  });
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <ul id="article_list">
+            {% for article in articles %}
+            <li class="article_item">
+                <a href="/{{article.slug}}">
+                    <div class="article_container">
+                        <p>{{article.title}}</p>
+                        <p>By:{{article.author}}</p>
+                        <p>{{article.published_date}}</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
