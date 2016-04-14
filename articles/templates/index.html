@@ -40,11 +40,12 @@
       <ul id="article_list">
         {% for article in articles %}
           <li class="article_item">
-            <a href="/articles/{{article.slug}}">
+            <a href="/articles/{{article.slug}}" class="articleLink">
               <div class="article_container">
-                <p>{{article.title}}</p>
-                <p>By:{{article.author}}</p>
-                <p>{{article.published_date}}</p>
+                <img src="{% static "images/data.png" %}" class="articleImage"/>
+                <p class="articleTitle">{{article.title}}</p>
+                <p class="articleAuthor">Author: {{article.author}}</p>
+                <p class="articleDate">{{article.published_date}}</p>
               </div>
             </a>
           </li>
