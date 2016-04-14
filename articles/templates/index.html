@@ -1,38 +1,55 @@
 {% load staticfiles %}
 <html>
-    <head>
-        <link href="{% static "css/index.css" %}" rel="stylesheet" type="text/css">
-        <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
-        <script>
-            function do_shit(){
-                console.log("HERE");
-                $.ajax({
-                  method: "POST",
-                  url: "/articles/",
-                  data: { csrfmiddlewaretoken: '{{csrf_token}}' }
-                })
-                  .done(function( msg ) {
-                    alert( "Data Saved: " + msg.username + " " + msg.password );
-                  });
-            }
-
-        </script>
-
-    </head>
-    <body>
-        <p class="blue">word</p>
-        <ul id="article_list">
-            {% for article in articles %}
-            <li class="article_item">
-                <a href="/articles/{{article.slug}}">
-                    <div class="article_container">
-                        <p>{{article.title}}</p>
-                        <p>By:{{article.author}}</p>
-                        <p>{{article.published_date}}</p>
-                    </div>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </body>
+  <head>
+    <link href="{% static "css/index.css" %}" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script>
+      function do_shit(){
+        console.log("HERE");
+        $.ajax({
+          method: "POST",
+          url: "/articles/",
+          data: { csrfmiddlewaretoken: '{{csrf_token}}' }
+        })
+        .done(function( msg ) {
+          alert( "Data Saved: " + msg.username + " " + msg.password );
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="" class="navigationLink" id="activeLink">Blog</a>
+      <a href="" class="navigationLink">Resources</a>
+      <a href="" class="navigationLink">Subscribe</a>
+      <form method="GET" action="/search" id="searchContainer">
+        <input type="text" placeholder="Search..." name="search" id="searchBox">
+        <input type="submit" value="s" id="submit">
+      </form>
+    </div>
+    <a href="" id="featured">
+      <h1 id="featuredArticle">FEATURED ARTICLE</h1>
+      <h1 id="featuredTitle">Data Mapping the Future</h1>
+      <img src="{% static "images/data.png" %}"/>
+    </a>
+    <div id="categoryContainer">
+      <a href="javascript:void(0);" class="categoryLink" id="activeCategory">Most Recent</a>
+      <a href="javascript:void(0);" class="categoryLink">Most Popular</a>
+    </div>
+    <div id="articlesContainer">
+      <ul id="article_list">
+        {% for article in articles %}
+          <li class="article_item">
+            <a href="/articles/{{article.slug}}">
+              <div class="article_container">
+                <p>{{article.title}}</p>
+                <p>By:{{article.author}}</p>
+                <p>{{article.published_date}}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
 </html>
