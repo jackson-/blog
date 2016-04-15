@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-    <p>{{article.title}}</p>
-    <p>By:{{article.author}}</p>
-    <p>{{article.published_date}}</p>
-    <p>{{article.content}}</p>
-
-</body>
+    <title>{{article.title}}</title>
+    <link href="../static/css/article.css" rel="stylesheet" type="text/css">
+  </head>
+  <body style="background-color: #A8E041;">
+    <div id="navigation">
+      <a href="/articles" class="navigationLink">Blog</a>
+      <a href="" class="navigationLink">Resources</a>
+      <a href="" class="navigationLink">Subscribe</a>
+      <form method="GET" action="/search" id="searchContainer">
+        <input type="text" placeholder="Search..." name="search" id="searchBox">
+        <input type="submit" value="s" id="submit">
+      </form>
+    </div>
+    <h1 id="articleTitle">{{article.title}}</h1>
+    <div id="metaContainer">
+      <p id="articleAuthor">Author: {{article.author}}</p>
+      <p id="articleDate">{{article.published_date}}</p>
+    </div>
+    <p id="articleContent">{{article.content}}</p>
+  </body>
 </html>
