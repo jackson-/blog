@@ -20,17 +20,17 @@
   </head>
   <body>
     <div id="navigation">
-      <a href="" class="navigationLink" id="activeLink">Blog</a>
-      <a href="" class="navigationLink">Resources</a>
-      <a href="" class="navigationLink">Subscribe</a>
+      <a href="/" class="navigationLink" id="activeLink">Blog</a>
+      <a href="/" class="navigationLink">Resources</a>
+      <a href="/" class="navigationLink">Subscribe</a>
       <form method="GET" action="/search" id="searchContainer">
         <input type="text" placeholder="Search..." name="search" id="searchBox">
         <input type="submit" value="s" id="submit">
       </form>
     </div>
-    <a href="" id="featured">
+    <a href="/{{featured.slug}}" id="featured">
       <h1 id="featuredArticle">FEATURED ARTICLE</h1>
-      <h1 id="featuredTitle">Data Mapping the Future</h1>
+      <h1 id="featuredTitle">{{featured.title}}</h1>
       <img src="{% static "images/data.png" %}"/>
     </a>
     <div id="categoryContainer">

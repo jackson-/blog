@@ -10,7 +10,8 @@ class IndexView(View):
 
     def get(self, request):
         articles = Article.objects.all()
-        return render(request, self.template_name, {'articles':articles})
+        featured =  Article.objects.latest("published_date")
+        return render(request, self.template_name, {'articles':articles, 'featured':featured})
 
 
 
