@@ -41,7 +41,7 @@
       <ul id="article_list">
         {% for article in articles %}
           <li class="article_item">
-            <a href="/articles/{{article.slug}}" class="articleLink">
+            <a href="/{{article.slug}}" class="articleLink">
               <div class="article_container">
                 <img src="{% static "images/data.png" %}" class="articleImage"/>
                 <p class="articleTitle">{{article.title}}</p>

@@ -6,6 +6,8 @@ class Article(models.Model):
     author = models.CharField(max_length=128, null=False)
     slug = models.SlugField(unique=True)
     content = models.TextField(null=False)
+    primary_color = models.CharField(max_length=128, null=True, default='None')
+    image = models.ImageField(upload_to='blah',default='/static/img/img.jpg')
     published_date = models.DateTimeField(auto_now_add=True)
     last_saved = models.DateTimeField(auto_now=True)
 
