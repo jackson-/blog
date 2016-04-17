@@ -21,8 +21,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('articles.urls')),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-# urlpatterns += patterns('django.views.static',
-#     (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
-# )
+
+] + patterns('django.views.static',
+    (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
+) + patterns("",
+        url(r'^', include('articles.urls')),
+             )
+
+print "PATERNS", urlpatterns
