@@ -222,14 +222,19 @@ body {
 }
 
 #articleDate {
-  color: #6d9a19;
+  color: #fff;
   font-size: 1vw;
   -webkit-font-size: 1vw;
   -moz-font-size: 1vw;
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
+}
+
+#articleImage {
+  width: 50%;
+  margin-left: 25%;
 }
 
 #articleContent {

@@ -5,17 +5,18 @@
     <title>{{article.title}}</title>
     <link href="../static/css/article.css" rel="stylesheet" type="text/css">
   </head>
-  <body style="background-color: #A8E041;">
+  <body style="background-color: {{article.primary_color}};">
     <div id="navigation">
       <a href="/" class="navigationLink">Blog</a>
-      <a href="/" class="navigationLink">Resources</a>
-      <a href="/" class="navigationLink">Subscribe</a>
+      <a href="" class="navigationLink">Resources</a>
+      <a href="" class="navigationLink">Subscribe</a>
       <form method="GET" action="/search" id="searchContainer">
         <input type="text" placeholder="Search..." name="search" id="searchBox">
         <input type="submit" value="s" id="submit">
       </form>
     </div>
     <h1 id="articleTitle">{{article.title}}</h1>
+    <img src="media/{{article.image}}" id="articleImage"/>
     <div id="metaContainer">
       <p id="articleAuthor">Author: {{article.author}}</p>
       <p id="articleDate">{{article.published_date}}</p>
