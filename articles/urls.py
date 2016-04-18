@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from articles.views import IndexView, ArticleView
+from articles.views import IndexView, ArticleView, SubscribeView
 
 
 urlpatterns = [
     url(r'^(?P<slug>.+)', ArticleView.as_view()),
     url(r'^$', IndexView.as_view()),
+    url(r'^subscribe/', SubscribeView.as_view()),
 ]

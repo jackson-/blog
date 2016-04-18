@@ -355,7 +355,7 @@ li {
 }
 
 .articleTitle {
-  color: #191919;
+  color: #fff;
   font-weight: bold;
   font-size: 1.4vw;
   -webkit-font-size: 1.4vw;
@@ -378,7 +378,7 @@ li {
 }
 
 .articleAuthor {
-  color: #373737;
+  color: #fff;
   font-size: 1.1vw;
   -webkit-font-size: 1.1vw;
   -moz-font-size: 1.1vw;
