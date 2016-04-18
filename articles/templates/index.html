@@ -28,10 +28,10 @@
         <input type="submit" value="s" id="submit">
       </form>
     </div>
-    <a href="/{{featured.slug}}" id="featured">
+    <a href="/{{featured.slug}}" id="featured" style="background-color: {{featured.primary_color}};">
       <h1 id="featuredArticle">FEATURED ARTICLE</h1>
       <h1 id="featuredTitle">{{featured.title}}</h1>
-      <img src="{% static "images/data.png" %}"/>
+      <img src="/media/{{featured.image}}" id="featuredImage"/>
     </a>
     <div id="categoryContainer">
       <a href="javascript:void(0);" class="categoryLink" id="activeCategory">Most Recent</a>
@@ -40,7 +40,7 @@
     <div id="articlesContainer">
       <ul id="article_list">
         {% for article in articles %}
-          <li class="article_item">
+          <li class="article_item" style="background-color: {{article.primary_color}};">
             <a href="/{{article.slug}}" class="articleLink">
               <div class="article_container">
                 <img src="/media/{{article.image}}" alt="{{article.image_alt}}" class="articleImage"/>

@@ -6,6 +6,11 @@ body {
   -o-margin: 0%;
   background-color: #e2e2e2;
   font-family: sans-serif;
+  padding-bottom: 5%;
+  -webkit-padding-bottom: 5%;
+  -moz-padding-bottom: 5%;
+  -ms-padding-bottom: 5%;
+  -o-padding-bottom: 5%;
 }
 
 #navigation {
@@ -197,17 +202,18 @@ body {
 }
 
 #metaContainer {
-  width: 30%;
-  -webkit-width: 30%;
-  -moz-width: 30%;
-  -ms-width: 30%;
-  -o-width: 30%;
-  margin-left: 35%;
-  -webkit-margin-left: 35%;
-  -moz-margin-left: 35%;
-  -ms-margin-left: 35%;
-  -o-margin-left: 35%;
+  width: 60%;
+  -webkit-width: 60%;
+  -moz-width: 60%;
+  -ms-width: 60%;
+  -o-width: 60%;
+  margin-left: 20%;
+  -webkit-margin-left: 20%;
+  -moz-margin-left: 20%;
+  -ms-margin-left: 20%;
+  -o-margin-left: 20%;
   text-align: center;
+  overflow: auto;
 }
 
 #articleAuthor {
@@ -219,17 +225,24 @@ body {
   -o-font-size: 1vw;
   font-weight: bold;
   display: inline-block;
+  float: left;
 }
 
 #articleDate {
-  color: #6d9a19;
+  color: #fff;
   font-size: 1vw;
   -webkit-font-size: 1vw;
   -moz-font-size: 1vw;
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
+  float: right;
+}
+
+#articleImage {
+  width: 50%;
+  margin-left: 25%;
 }
 
 #articleContent {
@@ -255,9 +268,59 @@ body {
   -moz-margin-top: 5%;
   -ms-margin-top: 5%;
   -o-margin-top: 5%;
-  margin-bottom: 5%;
-  -webkit-margin-bottom: 5%;
-  -moz-margin-bottom: 5%;
-  -ms-margin-bottom: 5%;
-  -o-margin-bottom: 5%;
+  margin-bottom: 2%;
+  -webkit-margin-bottom: 2%;
+  -moz-margin-bottom: 2%;
+  -ms-margin-bottom: 2%;
+  -o-margin-bottom: 2%;
+  line-height: 130%;
+  -webkit-line-height: 130%;
+  -moz-line-height: 130%;
+  -ms-line-height: 130%;
+  -o-line-height: 130%;
+  text-shadow: 0px 1px 2px #8c8c8c;
+}
+
+.twitter-share-button {
+  background-color: #fff;
+  color: #0099ff;
+  padding: .2% .5% .2% .5%;
+  -webkit-padding: .2% .5% .2% .5%;
+  -moz-padding: .2% .5% .2% .5%;
+  -ms-padding: .2% .5% .2% .5%;
+  -o-padding: .2% .5% .2% .5%;
+  font-size: 1vw;
+  -webkit-font-size: 1vw;
+  -moz-font-size: 1vw;
+  -ms-font-size: 1em;
+  -o-font-size: 1vw;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  margin-right: 1%;
+  -webkit-margin-right: 1%;
+  -moz-margin-right: 1%;
+  -ms-margin-right: 1%;
+  -o-margin-right: 1%;
+}
+
+.fb-share-button {
+  font-size: 1vw;
+  -webkit-font-size: 1vw;
+  -moz-font-size: 1vw;
+  -ms-font-size: 1em;
+  -o-font-size: 1vw;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  margin-right: 20%;
+  -webkit-margin-right: 20%;
+  -moz-margin-right: 20%;
+  -ms-margin-right: 20%;
+  -o-margin-right: 20%;
+  background-color: #0099ff !important;
+}
+
+.pluginButton {
+  background-color: #0099ff !important;
 }

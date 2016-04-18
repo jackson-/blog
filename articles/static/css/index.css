@@ -177,7 +177,6 @@ body {
   -moz-width: 100%;
   -ms-width: 100%;
   -o-width: 100%;
-  background-color: #A8E041;
   display: inline-block;
   text-align: center;
   padding-top: 3%;
@@ -194,7 +193,7 @@ body {
 }
 
 #featuredArticle {
-  color: #cded91;
+  color: #fff;
   font-size: 1vw;
   -webkit-font-size: 1vw;
   -moz-font-size: 1vw;
@@ -209,6 +208,10 @@ body {
   -moz-font-size: 3vw;
   -ms-font-size: 1.5em;
   -o-font-size: 3vw;
+}
+
+#featuredImage{
+  width: 30%;
 }
 
 #categoryContainer {
@@ -308,6 +311,7 @@ ul {
   -moz-padding: 0%;
   -ms-padding: 0%;
   -o-padding: 0%;
+  overflow: auto;
 }
 
 li {
@@ -334,6 +338,8 @@ li {
   -moz-padding: 2%;
   -ms-padding: 2%;
   -o-padding: 2%;
+  float: left;
+  height: 25vw;
 }
 
 .articleLink {
@@ -349,7 +355,7 @@ li {
 }
 
 .articleTitle {
-  color: #191919;
+  color: #fff;
   font-weight: bold;
   font-size: 1.4vw;
   -webkit-font-size: 1.4vw;
@@ -362,22 +368,33 @@ li {
   -moz-margin-top: 2%;
   -ms-margin-top: 2%;
   -o-margin-top: 2%;
+  bottom: 40%;
+  position: absolute;
+}
+
+.article_container {
+  position: relative;
+  height: 100%;
 }
 
 .articleAuthor {
-  color: #373737;
+  color: #fff;
   font-size: 1.1vw;
   -webkit-font-size: 1.1vw;
   -moz-font-size: 1.1vw;
   -ms-font-size: 1.1vw;
   -o-font-size: 1.1vw;
+  position: absolute;
+  bottom: 30%;
 }
 
 .articleDate {
-  color: #373737;
+  color: #fff;
   font-size: 1.1vw;
   -webkit-font-size: 1.1vw;
   -moz-font-size: 1.1vw;
   -ms-font-size: 1.1vw;
   -o-font-size: 1.1vw;
+  bottom: -4%;
+  position: absolute;
 }
