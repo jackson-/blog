@@ -19,6 +19,6 @@ from articles.views import IndexView, ArticleView
 
 
 urlpatterns = [
-    url(r'^(?P<slug>.+)', ArticleView.as_view()),
+    url(r'^(?P<slug>[-\w]+)', ArticleView.as_view()),
     url(r'^$', IndexView.as_view()),
 ]
