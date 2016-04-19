@@ -30,3 +30,10 @@ class SubscribeView(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+class ResourcesView(View):
+
+    template_name = 'resources.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
