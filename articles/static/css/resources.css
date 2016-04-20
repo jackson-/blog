@@ -227,3 +227,8 @@ body {
   -o-font-size: 1vw;
   color: #191919;
 }
+
+.link {
+  display: inline-block;
+  color: #0099ff;
+}
