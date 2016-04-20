@@ -24,3 +24,16 @@ class ArticleView(View):
         article = Article.objects.get(slug=kwargs['slug'])
         return render(request, self.template_name, {'article':article})
 
+class SubscribeView(View):
+
+    template_name = 'subscribe.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+class ResourcesView(View):
+
+    template_name = 'resources.html'
+
+    def get(self, request):
+        return render(request, self.template_name)

@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Subscribe</title>
+    <link href="{% static "css/subscribe.css" %}" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script>
+      function do_shit(){
+        console.log("HERE");
+        $.ajax({
+          method: "POST",
+          url: "/articles/",
+          data: { csrfmiddlewaretoken: '{{csrf_token}}' }
+        })
+        .done(function( msg ) {
+          alert( "Data Saved: " + msg.username + " " + msg.password );
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="/" class="navigationLink">Blog</a>
+      <a href="/resources" class="navigationLink">Resources</a>
+      <a href="/subscribe" class="navigationLink" id="activeLink">Subscribe</a>
+      <form method="GET" action="/search" id="searchContainer">
+        <input type="text" placeholder="Search..." name="search" id="searchBox">
+        <input type="submit" value="s" id="submit">
+      </form>
+    </div>
+    <div id="topDiv">
+      <h1 id="topDivHeader">Subscribe to Our Newsletter!</h1>
+      <p id="topDivSubHeader">Want to get the latest on our blog? We'll send you weekly emails to keep you updated!</p>
+      <img src="{% static "images/subscribe.jpg" %}" id="headerImage"/>
+      <form id="emailSubscribe">
+        <input type="text" name="email" placeholder="Your Email (e.g. 'john@example.com')" id="formText">
+        <input type="submit" value="Subscribe" id="email">
+      </form>
+    </div>
+  </body>
+</html>
