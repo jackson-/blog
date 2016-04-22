@@ -107,6 +107,10 @@ body {
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
   border: 1px solid #0099ff;
+  -webkit-border: 1px solid #0099ff; 
+  -moz-border: 1px solid #0099ff; 
+  -ms-border: 1px solid #0099ff; 
+  -o-border: 1px solid #0099ff;
   padding-left: 2%;
   -webkit-padding-left: 2%;
   -moz-padding-left: 2%;
@@ -150,6 +154,10 @@ body {
   -ms-border-bottom-right-radius: 2em;
   -o-border-bottom-right-radius: 2vw;
   border: 1px solid #0099ff;;
+  -webkit-border: 1px solid #0099ff;; 
+  -moz-border: 1px solid #0099ff;; 
+  -ms-border: 1px solid #0099ff;; 
+  -o-border: 1px solid #0099ff;;
   line-height: 2vw;
   -webkit-line-height: 2vw;
   -moz-line-height: 2vw;
@@ -212,6 +220,10 @@ body {
 
 #featuredImage{
   width: 30%;
+  -webkit-width: 30%; 
+  -moz-width: 30%; 
+  -ms-width: 30%; 
+  -o-width: 30%;
 }
 
 #categoryContainer {
@@ -344,6 +356,10 @@ li {
   -o-padding: 2%;
   float: left;
   height: 25vw;
+  -webkit-height: 25vw; 
+  -moz-height: 25vw; 
+  -ms-height: 25vw; 
+  -o-height: 25vw;
 }
 
 .articleLink {
@@ -373,12 +389,20 @@ li {
   -ms-margin-top: 2%;
   -o-margin-top: 2%;
   bottom: 40%;
+  -webkit-bottom: 40%; 
+  -moz-bottom: 40%; 
+  -ms-bottom: 40%; 
+  -o-bottom: 40%;
   position: absolute;
 }
 
 .article_container {
   position: relative;
   height: 100%;
+  -webkit-height: 100%; 
+  -moz-height: 100%; 
+  -ms-height: 100%; 
+  -o-height: 100%;
 }
 
 .articleAuthor {
@@ -390,6 +414,10 @@ li {
   -o-font-size: 1.1vw;
   position: absolute;
   bottom: 30%;
+  -webkit-bottom: 30%; 
+  -moz-bottom: 30%; 
+  -ms-bottom: 30%; 
+  -o-bottom: 30%;
 }
 
 .articleDate {
@@ -400,5 +428,9 @@ li {
   -ms-font-size: 1.1vw;
   -o-font-size: 1.1vw;
   bottom: -4%;
+  -webkit-bottom: -4%; 
+  -moz-bottom: -4%; 
+  -ms-bottom: -4%; 
+  -o-bottom: -4%;
   position: absolute;
 }

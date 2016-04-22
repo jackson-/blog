@@ -112,6 +112,10 @@ body {
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
   border: 1px solid #0099ff;
+  -webkit-border: 1px solid #0099ff; 
+  -moz-border: 1px solid #0099ff; 
+  -ms-border: 1px solid #0099ff; 
+  -o-border: 1px solid #0099ff;
   padding-left: 2%;
   -webkit-padding-left: 2%;
   -moz-padding-left: 2%;
@@ -155,6 +159,10 @@ body {
   -ms-border-bottom-right-radius: 2em;
   -o-border-bottom-right-radius: 2vw;
   border: 1px solid #0099ff;;
+  -webkit-border: 1px solid #0099ff;; 
+  -moz-border: 1px solid #0099ff;; 
+  -ms-border: 1px solid #0099ff;; 
+  -o-border: 1px solid #0099ff;;
   line-height: 2vw;
   -webkit-line-height: 2vw;
   -moz-line-height: 2vw;
@@ -242,7 +250,15 @@ body {
 
 #articleImage {
   width: 50%;
+  -webkit-width: 50%; 
+  -moz-width: 50%; 
+  -ms-width: 50%; 
+  -o-width: 50%;
   margin-left: 25%;
+  -webkit-margin-left: 25%; 
+  -moz-margin-left: 25%; 
+  -ms-margin-left: 25%; 
+  -o-margin-left: 25%;
 }
 
 #articleContent {
@@ -279,6 +295,10 @@ body {
   -ms-line-height: 130%;
   -o-line-height: 130%;
   text-shadow: 0px 1px 2px #8c8c8c;
+  -webkit-text-shadow: 0px 1px 2px #8c8c8c; 
+  -moz-text-shadow: 0px 1px 2px #8c8c8c; 
+  -ms-text-shadow: 0px 1px 2px #8c8c8c; 
+  -o-text-shadow: 0px 1px 2px #8c8c8c;
 }
 
 .twitter-share-button {
