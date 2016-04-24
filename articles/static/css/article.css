@@ -112,9 +112,9 @@ body {
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
   border: 1px solid #0099ff;
-  -webkit-border: 1px solid #0099ff; 
-  -moz-border: 1px solid #0099ff; 
-  -ms-border: 1px solid #0099ff; 
+  -webkit-border: 1px solid #0099ff;
+  -moz-border: 1px solid #0099ff;
+  -ms-border: 1px solid #0099ff;
   -o-border: 1px solid #0099ff;
   padding-left: 2%;
   -webkit-padding-left: 2%;
@@ -159,9 +159,9 @@ body {
   -ms-border-bottom-right-radius: 2em;
   -o-border-bottom-right-radius: 2vw;
   border: 1px solid #0099ff;;
-  -webkit-border: 1px solid #0099ff;; 
-  -moz-border: 1px solid #0099ff;; 
-  -ms-border: 1px solid #0099ff;; 
+  -webkit-border: 1px solid #0099ff;;
+  -moz-border: 1px solid #0099ff;;
+  -ms-border: 1px solid #0099ff;;
   -o-border: 1px solid #0099ff;;
   line-height: 2vw;
   -webkit-line-height: 2vw;
@@ -250,14 +250,14 @@ body {
 
 #articleImage {
   width: 50%;
-  -webkit-width: 50%; 
-  -moz-width: 50%; 
-  -ms-width: 50%; 
+  -webkit-width: 50%;
+  -moz-width: 50%;
+  -ms-width: 50%;
   -o-width: 50%;
   margin-left: 25%;
-  -webkit-margin-left: 25%; 
-  -moz-margin-left: 25%; 
-  -ms-margin-left: 25%; 
+  -webkit-margin-left: 25%;
+  -moz-margin-left: 25%;
+  -ms-margin-left: 25%;
   -o-margin-left: 25%;
 }
 
@@ -295,9 +295,9 @@ body {
   -ms-line-height: 130%;
   -o-line-height: 130%;
   text-shadow: 0px 1px 2px #8c8c8c;
-  -webkit-text-shadow: 0px 1px 2px #8c8c8c; 
-  -moz-text-shadow: 0px 1px 2px #8c8c8c; 
-  -ms-text-shadow: 0px 1px 2px #8c8c8c; 
+  -webkit-text-shadow: 0px 1px 2px #8c8c8c;
+  -moz-text-shadow: 0px 1px 2px #8c8c8c;
+  -ms-text-shadow: 0px 1px 2px #8c8c8c;
   -o-text-shadow: 0px 1px 2px #8c8c8c;
 }
 
@@ -336,4 +336,104 @@ body {
 
 .pluginButton {
   background-color: #0099ff !important;
+}
+
+#subscribeContainer {
+  width: 56%;
+  -webkit-width: 56%; 
+  -moz-width: 56%; 
+  -ms-width: 56%; 
+  -o-width: 56%;
+  margin-left: 20%;
+  -webkit-margin-left: 20%; 
+  -moz-margin-left: 20%; 
+  -ms-margin-left: 20%; 
+  -o-margin-left: 20%;
+  background-color: #f1f1f1;
+  margin-top: 5%;
+  -webkit-margin-top: 5%; 
+  -moz-margin-top: 5%; 
+  -ms-margin-top: 5%; 
+  -o-margin-top: 5%;
+  padding: 2%;
+  -webkit-padding: 2%; 
+  -moz-padding: 2%; 
+  -ms-padding: 2%; 
+  -o-padding: 2%;
+  box-shadow: 2px 2px 2px #8c8c8c;
+  -webkit-box-shadow: 2px 2px 2px #8c8c8c; 
+  -moz-box-shadow: 2px 2px 2px #8c8c8c; 
+  -ms-box-shadow: 2px 2px 2px #8c8c8c; 
+  -o-box-shadow: 2px 2px 2px #8c8c8c;
+  overflow: auto;
+  text-align: center;
+}
+
+#subscribeHeader {
+  font-size: 1.5vw;
+  -webkit-font-size: 1.5vw; 
+  -moz-font-size: 1.5vw; 
+  -ms-font-size: 1.5vw; 
+  -o-font-size: 1.5vw;
+  color: #191919;
+  margin: 0%;
+  -webkit-margin: 0%; 
+  -moz-margin: 0%; 
+  -ms-margin: 0%; 
+  -o-margin: 0%;
+}
+
+#email {
+  width: 60%;
+  -webkit-width: 60%; 
+  -moz-width: 60%; 
+  -ms-width: 60%; 
+  -o-width: 60%;
+  margin-top: 3%;
+  -webkit-margin-top: 3%; 
+  -moz-margin-top: 3%; 
+  -ms-margin-top: 3%; 
+  -o-margin-top: 3%;
+  line-height: 2vw;
+  -webkit-line-height: 2vw; 
+  -moz-line-height: 2vw; 
+  -ms-line-height: 2vw; 
+  -o-line-height: 2vw;
+  padding: .3% 3% .3% 3%;
+  -webkit-padding: .3% 3% .3% 3%; 
+  -moz-padding: .3% 3% .3% 3%; 
+  -ms-padding: .3% 3% .3% 3%; 
+  -o-padding: .3% 3% .3% 3%;
+  font-size: 1.1vw;
+  -webkit-font-size: 1.1vw; 
+  -moz-font-size: 1.1vw; 
+  -ms-font-size: 1.1vw; 
+  -o-font-size: 1.1vw;
+}
+
+#subscribe {
+  background-color: #FA615D;
+  border: 1px solid #FA615D;
+  -webkit-border: 1px solid #FA615D; 
+  -moz-border: 1px solid #FA615D; 
+  -ms-border: 1px solid #FA615D; 
+  -o-border: 1px solid #FA615D;
+  color: #fff;
+  font-size: 1.1vw;
+  -webkit-font-size: 1.1vw; 
+  -moz-font-size: 1.1vw; 
+  -ms-font-size: 1.1vw; 
+  -o-font-size: 1.1vw;
+  padding: .3% 3% .3% 3%;
+  -webkit-padding: .3% 3% .3% 3%; 
+  -moz-padding: .3% 3% .3% 3%; 
+  -ms-padding: .3% 3% .3% 3%; 
+  -o-padding: .3% 3% .3% 3%;
+  line-height: 2vw;
+  -webkit-line-height: 2vw; 
+  -moz-line-height: 2vw; 
+  -ms-line-height: 2vw; 
+  -o-line-height: 2vw;
+  font-weight: bold;
+  cursor: pointer;
 }
