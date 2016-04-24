@@ -1,8 +1,8 @@
 {% load staticfiles %}
 <html>
   <head>
-    <title>Subscribe</title>
-    <link href="{% static "css/subscribe.css" %}" rel="stylesheet" type="text/css">
+    <title>Resources</title>
+    <link href="{% static "css/resources.css" %}" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
     <script>
       function do_shit(){
@@ -21,21 +21,18 @@
   <body>
     <div id="navigation">
       <a href="/" class="navigationLink">Blog</a>
-      <a href="/resources" class="navigationLink">Resources</a>
-      <a href="/subscribe" class="navigationLink" id="activeLink">Subscribe</a>
+      <a href="/resources" class="navigationLink" id="activeLink">Resources</a>
+      <a href="/subscribe" class="navigationLink">Subscribe</a>
       <form method="GET" action="/search" id="searchContainer">
         <input type="text" placeholder="Search..." name="search" id="searchBox">
         <input type="submit" value="s" id="submit">
       </form>
     </div>
     <div id="topDiv">
-      <h1 id="topDivHeader">Subscribe to Our Newsletter!</h1>
-      <p id="topDivSubHeader">Want to get the latest on our blog? We'll send you weekly emails to keep you updated!</p>
-      <img src="{% static "images/subscribe.jpg" %}" id="headerImage"/>
-      <form id="emailSubscribe">
-        <input type="text" name="email" placeholder="Your Email (e.g. 'john@example.com')" id="formText">
-        <input type="submit" value="Subscribe" id="email">
-      </form>
+      <a href="" class="resourceContainer">
+        <h1 class="resourceName">Sample Resource</h1>
+        <p class="resourceDescription">Some things about this resource are written here, not too much, but not too little. Just enough for users to know what the resource is and whether it would interest them or not.</p>
+      </a>
     </div>
   </body>
 </html>
