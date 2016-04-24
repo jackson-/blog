@@ -107,9 +107,9 @@ body {
   -ms-font-size: 1vw;
   -o-font-size: 1vw;
   border: 1px solid #0099ff;
-  -webkit-border: 1px solid #0099ff; 
-  -moz-border: 1px solid #0099ff; 
-  -ms-border: 1px solid #0099ff; 
+  -webkit-border: 1px solid #0099ff;
+  -moz-border: 1px solid #0099ff;
+  -ms-border: 1px solid #0099ff;
   -o-border: 1px solid #0099ff;
   padding-left: 2%;
   -webkit-padding-left: 2%;
@@ -154,9 +154,9 @@ body {
   -ms-border-bottom-right-radius: 2em;
   -o-border-bottom-right-radius: 2vw;
   border: 1px solid #0099ff;;
-  -webkit-border: 1px solid #0099ff;; 
-  -moz-border: 1px solid #0099ff;; 
-  -ms-border: 1px solid #0099ff;; 
+  -webkit-border: 1px solid #0099ff;;
+  -moz-border: 1px solid #0099ff;;
+  -ms-border: 1px solid #0099ff;;
   -o-border: 1px solid #0099ff;;
   line-height: 2vw;
   -webkit-line-height: 2vw;
@@ -196,6 +196,11 @@ body {
   -moz-margin-top: 5%;
   -ms-margin-top: 5%;
   -o-margin-top: 5%;
+  margin-bottom: 5%;
+  -webkit-margin-bottom: 5%;
+  -moz-margin-bottom: 5%;
+  -ms-margin-bottom: 5%;
+  -o-margin-bottom: 5%;
 }
 
 .resourceContainer {
