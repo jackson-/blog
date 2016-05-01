@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib import admin
 
 class Article(models.Model):
     id = models.AutoField(primary_key=True)
