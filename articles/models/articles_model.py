@@ -12,8 +12,14 @@ class Article(models.Model):
     published_date = models.DateTimeField(auto_now_add=True)
     last_saved = models.DateTimeField(auto_now=True)
 
+class Subscription(models.Model):
+    email = models.EmailField(primary_key=True)
+    published_date = models.DateTimeField(auto_now_add=True)
+    last_saved = models.DateTimeField(auto_now=True)
+
 from django.contrib import admin
 
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     date_hierarchy = 'published_date'
+
