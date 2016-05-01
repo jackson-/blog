@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.http import  JsonResponse
-from articles.models.articles_model import Article
+from articles.models.articles_model import Article, Subscription
 import operator
 
 # Create your views here.
@@ -32,6 +32,15 @@ class SubscribeView(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+    def post(self, request):
+        print request.POST
+        try:
+            Subscription.objects.create(email=str(request.POST['email']))
+        except Exception as e:
+            print "EXC", e
+            return JsonResponse({'status':500})
+        return JsonResponse({'status':200})
 
 class ResourcesView(View):
 

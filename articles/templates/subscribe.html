@@ -5,15 +5,22 @@
     <link href="{% static "css/subscribe.css" %}" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
     <script>
-      function do_shit(){
-        console.log("HERE");
+      function subscribe(event){
+        event.preventDefault()
+        console.log("SUBSCRIBE");
         $.ajax({
           method: "POST",
-          url: "/articles/",
-          data: { csrfmiddlewaretoken: '{{csrf_token}}' }
+          url: "/subscribe",
+          data: {
+          email:$("#formText").val(),
+          csrfmiddlewaretoken: '{{csrf_token}}' }
         })
-        .done(function( msg ) {
-          alert( "Data Saved: " + msg.username + " " + msg.password );
+        .done(function( result ) {
+          if (result.status === 200 ){
+            alert( "A confirmation email has been sent to : " + $("#formText").val() );
+          } else {
+            alert( "There was an issue. Please use another email." );
+          }
         });
       }
     </script>
@@ -33,8 +40,8 @@
       <p id="topDivSubHeader">Want to get the latest on our blog? We'll send you weekly emails to keep you updated!</p>
       <img src="{% static "images/subscribe.jpg" %}" id="headerImage"/>
       <form id="emailSubscribe">
-        <input type="text" name="email" placeholder="Your Email (e.g. 'john@example.com')" id="formText">
-        <input type="submit" value="Subscribe" id="email">
+        <input type="email" name="email" placeholder="Your Email (e.g. 'john@example.com')" id="formText">
+        <button type="submit" value="Subscribe" id="email" onclick="subscribe(event)">Submit</button>
       </form>
     </div>
   </body>
