@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import View
-from django.http import  JsonResponse
+from django.http import JsonResponse
 from articles.models.articles_model import Article, Subscription
 import operator
 
@@ -48,3 +48,15 @@ class ResourcesView(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+class Player(object):
+
+    def __init__(self, strength, dexterity, constitution,intelligence,wisdom,charisma,player_name,sex):
+        self.strength = strength
+        self.dexterity = dexterity
+        self.constitution = constitution
+        self.intelligence = intelligence
+        self.wisdom = wisdom
+        self.charisma = charisma
+        self.name = player_name
+        self.sex = sex
