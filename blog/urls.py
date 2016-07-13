@@ -28,4 +28,3 @@ urlpatterns = [
         url(r'^', include('articles.urls')),
              )
 
-print "PATERNS", urlpatterns
