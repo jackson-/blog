@@ -10,7 +10,7 @@
         console.log("SUBSCRIBE");
         $.ajax({
           method: "POST",
-          url: "/subscribe",
+          url: "/subscribe/",
           data: {
           email:$("#formText").val(),
           csrfmiddlewaretoken: '{{csrf_token}}' }
