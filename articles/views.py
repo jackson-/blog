@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.http import JsonResponse
-from articles.models.articles_model import Article, Subscription
+from models.articles_model import Article, Subscription
 import operator
 
 # Create your views here.
@@ -22,7 +22,6 @@ class ArticleView(View):
     template_name = 'article.html'
 
     def get(self, request, **kwargs):
-        print kwargs
         article = Article.objects.get(slug=kwargs['slug'])
         return render(request, self.template_name, {'article':article})
 
@@ -34,12 +33,7 @@ class SubscribeView(View):
         return render(request, self.template_name)
 
     def post(self, request):
-        print request.POST
-        try:
-            Subscription.objects.create(email=str(request.POST['email']))
-        except Exception as e:
-            print "EXC", e
-            return JsonResponse({'status':500})
+        Subscription.objects.create(email=str(request.POST['email']))
         return JsonResponse({'status':200})
 
 class ResourcesView(View):
@@ -48,15 +42,3 @@ class ResourcesView(View):
 
     def get(self, request):
         return render(request, self.template_name)
-
-class Player(object):
-
-    def __init__(self, strength, dexterity, constitution,intelligence,wisdom,charisma,player_name,sex):
-        self.strength = strength
-        self.dexterity = dexterity
-        self.constitution = constitution
-        self.intelligence = intelligence
-        self.wisdom = wisdom
-        self.charisma = charisma
-        self.name = player_name
-        self.sex = sex

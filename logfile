@@ -1,0 +1,255 @@
+[23/Jul/2016 20:25:37] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:41] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:46] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:47] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:50] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:52] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:53] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:25:54] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:26:06] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:26:08] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:26:37] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:26:43] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:27:27] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:27:39] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+[23/Jul/2016 20:27:41] ERROR [django.request:284] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/devinjackson/Documents/WebApps/blog/articles/views.py", line 25, in get
+    article = Article.objects.get(slug=kwargs['slug'])
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/devinjackson/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
