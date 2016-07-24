@@ -30,67 +30,6 @@ ALLOWED_HOSTS = ["*"]
 ADMINS = ['jackson.t.devin@gmail.com']
 SERVER_EMAIL = ['jtdp123@gmail.com']
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': True,
-    'formatters': {
-        'standard': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt' : "%d/%b/%Y %H:%M:%S"
-        },
-    },
-    'handlers': {
-        'logfile': {
-            'level':'DEBUG',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/home/django/blog' + "/logfile",
-            'maxBytes': 50000,
-            'backupCount': 2,
-            'formatter': 'standard',
-        },
-        'logfile': {
-            'level':'ERROR',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/home/django/blog' + "/logfile",
-            'maxBytes': 50000,
-            'backupCount': 2,
-            'formatter': 'standard',
-        },
-        'console':{
-            'level':'INFO',
-            'class':'logging.StreamHandler',
-            'formatter': 'standard'
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers':['logfile'],
-            'propagate': True,
-            'level':'WARN',
-        },
-        'django.request': {
-            'handlers': ['logfile'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.security': {
-            'handlers': ['logfile'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'django.db.backends': {
-            'handlers': ['logfile'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-        'articles': {
-            'handlers': ['console', 'logfile'],
-            'level': 'DEBUG',
-        },
-    }
-}
-
-
 
 
 # Application definition
@@ -210,7 +149,7 @@ LOGGING = {
         },
         'articles': {
             'handlers': ['console', 'logfile'],
-            'level': 'DEBUG',
+            'level': 'ERROR',
         },
     }
 }
