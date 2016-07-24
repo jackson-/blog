@@ -20,8 +20,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    url(r'^montypython666', admin.site.urls),
     url(r'^montypython666/', admin.site.urls),
-
 ] + patterns('django.views.static',
     (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
 ) + patterns("",

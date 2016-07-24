@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.http import JsonResponse
-from articles.models.articles_model import Article, Subscription
+from models.articles_model import Article, Subscription
 import operator
 
 # Create your views here.
