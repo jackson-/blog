@@ -51,7 +51,7 @@ LOGGING = {
         'logfile': {
             'level':'ERROR',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/home/django/blog' + "/logfile",
+            'filename': '/Users/devinjackson/Documents/WebApps/blog' + "/logfile",
             'maxBytes': 50000,
             'backupCount': 2,
             'formatter': 'standard',
